@@ -1,0 +1,62 @@
+<!doctype html>
+	<html lang="en" xml:lang="en">
+		<head>
+			<meta charset="utf-8">
+			<title>Planeco</title>
+			<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+		</head>
+		<body>
+
+            <div class="topBar">
+                <a id="homeLink" href="/">
+                <img id="logo" src="/static/logo.png" alt="logo">
+                </a> 
+            </div>
+
+            <div id="parallax">
+                <h1 id="slogan">Your schedule reinvented.</h1>
+            </div>
+
+            <form action="http://127.0.0.1:5000/workspace" method="GET">
+                <input class="start" type="submit" value="Start planning your week now >>" />
+            </form> <br><br>
+
+
+
+            <div class="float_container">
+
+                <div class="float_child">
+                    <div class="text" id="aboutUs">
+                        <h3>About us</h3>
+                        <p>
+                            Planeco was born on a snowy Friday night in a small university residence room in Montreal. 
+                            While all our friends were out partying, we stayed in and brainstormed to figure out what 
+                            we were going to design for the 11th codeJam hackathon. After hours of tossing and turning, 
+                            we came up with the idea that was going to change the way companies think their schedule 
+                            building: Planeco. Indeed, it addresses the 2 biggest challenges that companies face during 
+                            the 21st century: sustainability, to limit their environmental impact, and remote work, to 
+                            protect their workers from pandemics but also to limit costs by optimizing the size of their 
+                            in-presence workspaces. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="float_child">
+                    <div class="text" id="howItWorks">
+                        <h3>How it works</h3>
+                        <p>
+                            Our algorithm takes schedule building to a whole new level by including the carbon footprint 
+                            of each employee when they make their way to work, prioritizing the ones using the most eco-friendly 
+                            means of transport. We also consider the employee’s comfort by including each employee’s preferred 
+                            days for remote work and the time it takes them to reach the company’s workspace when we build the 
+                            weekly schedule. Finally, our algorithm ensures itself that the maximum capacity of a workspace is 
+                            never exceeded, automatically adapting it to potential sanitary restrictions.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            
+
+		</body>
+	</html>

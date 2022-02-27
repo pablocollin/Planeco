@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Schedule</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='schedulePerso.css') }}">
+</head>
+<body>
+
+    <div class="topBar">
+        <a id="homeLink" href="/">
+        <img id="logo" src="/static/logo.png" alt="logo">
+        </a> 
+    </div>
+
+    <br><br>
+
+    <div id="mainDiv">
+        <h1 id="titlePerso">{{fullIntro}}</h1>
+        <table id="schedulePerso">
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thrusday</th>
+                <th>Friday</th>
+            </tr>
+
+            <tr>
+
+                {% for dayStatus in persoSchedule %}
+                <td>
+                    {{dayStatus}}
+                </td>
+
+                {% endfor %}
+                
+            </tr>
+
+
+        </table>
+
+        
+    </div>
+    
+</body>
+</html>

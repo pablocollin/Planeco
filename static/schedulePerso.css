@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+}
+
+.mainBody{
+    margin: 2%;
+    width: 90%;
+}
+
+#logo{
+    width: 300px;
+    height:auto;
+    vertical-align: middle;
+}
+
+.topBar{
+    background-color: rgb(248, 248, 248);
+    color: hsl(122, 47%, 57%);
+    font-size: 40px;
+    padding:0.5%;
+}
+
+#homeLink{
+    color: hsl(122, 47%, 57%);
+    font-family: Verdana;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+#mainDiv{
+    background-color: rgb(248, 248, 248);
+    color: black;
+    font-family: Arial,sans-serif;
+    font-size: 20px;
+    padding: 2%;
+    margin-bottom: 3%;
+    margin-left: 70px;
+    margin-right: 70px;
+    
+}
+
+#titlePerso{
+    color: #4169E1;
+    font-size: 27px;
+}
+
+#schedulePerso{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-collapse: collapse;
+
+}
+
+th {
+    background-color: #4CAF50;
+    border:solid #4CAF50;
+    color: white;
+    text-align: left;
+    font-family: Verdana;
+    font-size: 20px;
+    padding: 8px;
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+    border:solid #4CAF50;
+    font-family: Verdana;
+  }
+

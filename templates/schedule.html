@@ -1,0 +1,66 @@
+<!doctype html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Schedule</title>
+			<link rel="stylesheet" href="{{ url_for('static', filename='schedule.css') }}">
+		</head>
+		<body>
+
+        <div class="topBar">
+            <a id="homeLink" href="/">
+            <img id="logo" src="/static/logo.png" alt="logo">
+            </a> 
+        </div>
+
+        <div>
+            <table id="schedule">
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+
+                <tr>
+
+                    {% for employeeList in schedule %}
+                    <td>
+                        <br>
+                        {% for employee in employeeList %}
+                            {{employee}}<br><br>
+                        {% endfor %}
+                    </td>
+
+                    {% endfor %}
+                    
+                </tr>
+
+
+            </table>
+
+            
+        </div>
+
+        <br><br><br>
+
+        <form class="schedulePersoForm" action="http://127.0.0.1:5000/schedulePerso/{{workspaceID}}" method="POST">
+
+            <label id="persoScheduleLabel"><b>Personal weekly schedule:</b></label> <br><br><br>
+
+            <label>Name:</label><br><br>
+            <input class="inputBox" type="text" id="name" name="name" required><br><br>
+
+            <label>Last Name:</label><br><br>
+            <input class="inputBox" type="text" id="lastName" name="lastName" required><br><br>
+                
+            <input class='submitSearch' id = "submit" type='submit' value='Search'/>
+            
+        </form>
+
+
+        <br><br><br>
+
+		</body>
+	</html>

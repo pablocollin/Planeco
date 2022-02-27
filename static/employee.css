@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+}
+
+.mainBody{
+    margin: 2%;
+    width: 90%;
+}
+
+#logo{
+    width: 300px;
+    height:auto;
+    vertical-align: middle;
+}
+
+.topBar{
+    background-color: rgb(248, 248, 248);
+    color: hsl(122, 47%, 57%);
+    font-family: Verdana;
+    font-size: 40px;
+    padding:0.5%;
+
+}
+
+#homeLink{
+    color: hsl(122, 47%, 57%);
+    font-family: Verdana;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.addEmployeeForm{
+    background-color: rgb(248, 248, 248);
+    color: black;
+    font-family: Arial,sans-serif;
+    width: 100%;
+    font-size: 20px;
+    padding: 2.5%;
+    margin-bottom: 3%;
+
+}
+
+#adder{
+    color: #4169E1;
+    font-size: 27px;
+}
+
+input{
+    border: none;
+}
+
+.inputBox{
+    padding: 0.5%;
+    width: 60%;
+    font-family: Verdana;
+    font-size:17px;
+    border: none;
+
+}
+
+.scrollDown{
+    padding: 0.5%;
+    width: 60%;
+    font-family: Verdana;
+    font-size:15px;
+    border: none;
+    color: #4169E1;
+}
+
+
+
+.addEmployee{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.addEmployee:hover {
+    background-color: #45a049;
+}
+
+.doneButton{
+    background-color: #4169E1;
+    color: white;
+    font-family: Verdana;
+    font-size: 15px;
+    padding: 1%;
+    width: 10%;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+.doneButton:hover{
+    background-color: #3657b8;
+}
+
